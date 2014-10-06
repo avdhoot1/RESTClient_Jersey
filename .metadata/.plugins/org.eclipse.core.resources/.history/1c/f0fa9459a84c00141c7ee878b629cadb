@@ -1,0 +1,11 @@
+package com.sample.rest;
+
+public class link {
+
+	Node a=new Node();
+	int i=0;
+	i=a.getA();
+	
+	
+	
+}

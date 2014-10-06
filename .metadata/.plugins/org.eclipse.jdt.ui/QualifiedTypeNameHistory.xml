@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
+<fullyQualifiedTypeName name="com.sun.jersey.api.client.Client"/>
+<fullyQualifiedTypeName name="com.sun.jersey.api.client.WebResource"/>
+<fullyQualifiedTypeName name="com.sun.jersey.api.client.ClientResponse"/>
+</qualifiedTypeNameHistroy>

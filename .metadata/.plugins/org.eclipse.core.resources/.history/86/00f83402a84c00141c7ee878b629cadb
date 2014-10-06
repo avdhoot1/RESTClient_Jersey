@@ -1,0 +1,31 @@
+package com.sample.rest;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+
+@Path("/stat/get")
+public class stat 
+{
+
+	@GET
+	@Path("/version")
+	@Produces(MediaType.TEXT_HTML)
+	public String version()
+	{
+		Node g=new Node();
+		int i;
+		String version="1.32";
+		System.out.println("VERSION is "+version);
+		i = g.getA();
+		System.out.println("VERSION is "+i);
+		return "<h1> VERSION IS "+version+"</h1><br><h2> Version is " +i+ "</h2>";
+	}
+	
+	
+	
+	
+	
+}

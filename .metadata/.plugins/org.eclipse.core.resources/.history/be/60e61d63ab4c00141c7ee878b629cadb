@@ -1,0 +1,17 @@
+package com.sample.rest;
+
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.WebResource;
+
+public class getClient {
+
+
+	public static void main(String[] args)
+	{
+		Client client=Client.create();
+		String base="http://localhost:8080/com.sample/rest";
+		WebResource res=client.resource(base+"/stat/get/version");
+		
+	}
+
+}

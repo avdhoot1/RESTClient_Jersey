@@ -1,0 +1,38 @@
+package com.sample.rest;
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.ClientResponse;
+import com.sun.jersey.api.client.WebResource;
+ 
+public class JerseyClientGet {
+ 
+	//protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+//	}
+	
+	
+  public static void main(String[] args) 
+  {
+	  Client client=Client.create();
+		WebResource webresource=client.resource("http://localhost:8080/com.sample/rest/stat/get/version");
+		ClientResponse resp=webresource.accept("text/html").get(ClientResponse.class);
+		if(resp.getStatus()==200)
+		{
+			String output=resp.getEntity(String.class);
+			System.out.println(output);
+		}
+		else
+		{
+			System.out.println("HTTP OPERATION FAILED");
+			System.out.println(resp.getStatus());
+		}
+ 
+  }
+  
+  
+}

@@ -1,0 +1,14 @@
+package com.sample.rest;
+
+import com.sun.jersey.api.client.Client;
+
+public class getClient {
+
+
+	public static void main(String[] args)
+	{
+		Client client=Client.create();
+		
+	}
+
+}

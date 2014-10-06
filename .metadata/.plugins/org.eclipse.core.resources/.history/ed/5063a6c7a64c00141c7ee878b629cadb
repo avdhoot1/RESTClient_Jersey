@@ -1,0 +1,27 @@
+package com.sample.rest;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+
+@Path("/stat/get")
+public class stat 
+{
+
+	@GET
+	@Path("/version")
+	@Produces(MediaType.TEXT_HTML)
+	public String version()
+	{
+		String version="1.32";
+		System.out.println("VERSION is "+version);
+		return "<h1> Version is " +version+ "</h>";
+	}
+	
+	
+	
+	
+	
+}
